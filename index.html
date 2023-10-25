@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cursor">BUY</div>
+    <div id="preloader">
+        <i class="ri-loader-fill"></i>
+        <p>loading...</p>
+        <h1>Nitro <br> &nbsp; &nbsp; &nbsp;Drive</h1>
+    </div>
+    <div id="main">
+        <div id="page1">
+            <h1>Buy Cars</h1>
+            <h1> with us</h1>
+            <div id="video-container">
+                <div id="play">PLAY</div>
+                <video autoplay muted loop src="images/bmw.mp4"></video>
+            </div>
+            <div id="page2">
+                <div id="elem1" class="elem">
+                    <img data-scroll data-scroll-speed = "1.5" src="images/super.jpg" alt="suercars">
+                    <div data-scroll data-scroll-speed = "-1" class="details"></div>
+                </div>
+                <div id="elem2" class="elem">
+                    <img data-scroll data-scroll-speed = "1.5" src="images/family.jpg" alt="Family">
+                    <div data-scroll data-scroll-speed = "-1" class="details"></div>
+                </div>
+                <div id="elem3" class="elem">
+                    <img data-scroll data-scroll-speed = "1.5" src="https://images.unsplash.com/photo-1612039442259-6ac8eacb2628?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHZpbmF0Z2UlMjBjYXJ8ZW58MHx8MHx8fDA%3D&w=500" alt="Exotic">
+                    <div data-scroll data-scroll-speed = "-1" class="details"></div>
+                </div>
+            </div>
+            <div id="page3">
+                <div class="child" id="child1">
+                    <img src="./images/bmw.jpg" alt="">
+                </div>
+                <div class="child" id="child2">
+                    <img src="./images/range.jpg" alt="">
+                </div>
+                <div class="child" id="child3">
+                    <img src="./images/jeep.jpg" alt="">
+                </div>
+                <div class="child" id="child4">
+                    <img src="./images/porche.jpg" alt="">
+                </div>
+            </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
