@@ -62,6 +62,8 @@ function pagecrsr(){
         })
     })
 }
+function smthng(){
+}
 preloader();
 headingAnimation();
 cursorAnimation();
