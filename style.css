@@ -13,6 +13,46 @@ html, body{
     width: 100%;
     background-color: #f7f7f7;
 }
+#nav{
+    width: 100%;
+    z-index: 109;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+}
+#nav #navrght{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#links{
+    padding: 20px;
+}
+#icons{
+    padding: 10px;
+}
+#nav #navrght #links a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #474747;
+    font-weight: 800;
+    font-size: 14px;
+    margin-right: 45px;
+}
+#navrght #icons i{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 50px;
+
+}
+#nav img{
+    width: 100px;
+    height: 100px;
+}
 
 #page1{
     min-height: 100vh;
