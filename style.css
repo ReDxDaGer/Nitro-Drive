@@ -1,8 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Futura;
-    box-sizing: border-box;
+    font-family: P"Poppins",sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*::-moz-selection{
+    color: #f7f7f7;
+    background-color: black;
 }
 *::selection{
     color: #f7f7f7;
@@ -17,15 +22,27 @@ html, body{
     width: 100%;
     z-index: 109;
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 15px;
 }
 #nav #navrght{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 40px;
 }
 #links{
@@ -74,7 +91,8 @@ html, body{
     position: relative;
 }
 #video-container video{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 100%;
 }
@@ -85,17 +103,25 @@ html, body{
     background-color: black;
     color: #fff;
     position: fixed;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     opacity: 0;
 }
 #page2{
     height: 100vh;
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3vw 0.5vw;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 #page2 .elem{
@@ -104,14 +130,21 @@ html, body{
     width: 31%;
     position: relative;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 #page2 .elem img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     scale: 1.2;
 }
 #page2 .elem .details{
@@ -127,10 +160,17 @@ html, body{
     min-height: 120vh;
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .child{
     cursor: pointer;
@@ -138,8 +178,12 @@ html, body{
     border-radius: 20px;
     width: 45vw;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .child img{
     height: 100%;
@@ -153,7 +197,9 @@ html, body{
     color: #f7f7f7;
     opacity: 0;
     font-size: 1.3vw;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     border-radius: 50%;
     position: fixed;
     background-color: rgb(91, 82, 82);
@@ -173,7 +219,8 @@ html, body{
     left: 46.5vw;
     height: 100px;
     width: 100px;
-    animation: loading infinite ease;
+    -webkit-animation: loading infinite ease;
+            animation: loading infinite ease;
 }
 #preloader p{
     position: relative;
@@ -184,12 +231,25 @@ html, body{
     letter-spacing: 8px;
     text-transform: uppercase;
 }
-@keyframes loading {
+@-webkit-keyframes loading {
     0%{
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    
+}
+@keyframes loading {
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
     
 }
@@ -198,7 +258,17 @@ html, body{
     top: 29.5vw;
     left: 42vw;
     letter-spacing: 8px;
-    animation: lettersapce 5s ease;
+    -webkit-animation: lettersapce 5s ease;
+            animation: lettersapce 5s ease;
+}
+@-webkit-keyframes letterspace {
+    0%{
+        letter-spacing: 8px;
+    }
+    100%{
+        letter-spacing: 13px;
+    }
+    
 }
 @keyframes letterspace {
     0%{
