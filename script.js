@@ -1,7 +1,10 @@
+// This is locomotive (it makes the scroll smooth)
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
+
+// this animation moves with the cursor
 function cursorAnimation(){
     var cursor = document.querySelector("#video-container")
     var btn = document.querySelector("#play")
@@ -24,6 +27,8 @@ function cursorAnimation(){
         })
     })
 }
+
+// this animation slides the header from bottom 100% 
 function headingAnimation(){
     gsap.from("#page1 h1",{
         y:100,
@@ -40,12 +45,16 @@ function headingAnimation(){
         stagger:0.3
     })
 }
+
+// This function creates a preloader screeen
 function preloader(){
     var loader = document.getElementById("preloader")
     window.addEventListener('load',function(){
         loader.style.display = "none";
     })
 }
+
+// this animation moves with the cursor
 function pagecrsr(){
     var pge = document.querySelector("#page3")
     var crsr = document.querySelector("#cursor")
@@ -62,8 +71,12 @@ function pagecrsr(){
         })
     })
 }
+
+// This do nothing for now !!
 function smthng(){
 }
+
+// Called all the functions
 preloader();
 headingAnimation();
 cursorAnimation();
