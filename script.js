@@ -51,12 +51,12 @@ function pagecrsr(){
     var crsr = document.querySelector("#cursor")
     pge.addEventListener("mousemove",function(dets){
         gsap.to(crsr,{
-            opacity:0.6,
+            opacity:0.3,
             left:dets.x,
             top:dets.y
         })
     })
-    pge.addEventListener("mouseleave",function(dets){
+    pge.addEventListener("mouseleave",function(){
         gsap.to(crsr,{
             opacity:0,
         })
